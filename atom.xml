@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Roooooooooy.github.io/"/>
-  <updated>2019-12-02T04:43:32.567Z</updated>
+  <updated>2021-11-16T09:38:04.201Z</updated>
   <id>http://Roooooooooy.github.io/</id>
   
   <author>
@@ -17,13 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HighlightTest</title>
+    <link href="http://Roooooooooy.github.io/2021/11/16/HighlightTest/"/>
+    <id>http://Roooooooooy.github.io/2021/11/16/HighlightTest/</id>
+    <published>2021-11-16T01:38:07.000Z</published>
+    <updated>2021-11-16T09:38:04.201Z</updated>
+    
+    <content type="html"><![CDATA[<p><span id="inline-blue"> 蓝色背景高亮 </span><br><span id="inline-purple"> 紫色背景高亮 </span><br><span id="inline-yellow"> 黄色背景高亮 </span><br><span id="inline-green"> 绿色背景高亮 </span><br>普通代码块<pre><code>——–Normal-Code——–<br>Test1<br>    Test2<br>        Test3<br>——–CodeEnd——–<br></code></pre><br>c#代码块</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">IsRandomProbability</span>(<span class="params"><span class="keyword">int</span> numerator, <span class="keyword">int</span> denominator</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> random = UnityEngine.Random.Range(<span class="number">0</span>, denominator);</span><br><span class="line">    <span class="keyword">if</span> (random &lt; numerator)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Java代码块<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">""</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;span id=&quot;inline-blue&quot;&gt; 蓝色背景高亮 &lt;/span&gt;&lt;br&gt;&lt;span id=&quot;inline-purple&quot;&gt; 紫色背景高亮 &lt;/span&gt;&lt;br&gt;&lt;span id=&quot;inline-yellow&quot;&gt; 黄色背景高亮 &lt;/span&gt;&lt;br&gt;&lt;span i
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>容器</title>
     <link href="http://Roooooooooy.github.io/2019/12/02/%E5%AE%B9%E5%99%A8/"/>
     <id>http://Roooooooooy.github.io/2019/12/02/容器/</id>
     <published>2019-12-02T04:39:38.000Z</published>
-    <updated>2019-12-02T04:43:32.567Z</updated>
+    <updated>2021-11-16T09:37:36.858Z</updated>
     
-    <content type="html"><![CDATA[<p>看了福山雅治主演的第三度嫌疑人，许多困扰着我的问题我有了更深的理解。有理性的人类会将他们做出的行为赋予意义，将这些行为举动理性化，人们经常会做出一些难以理解的行为，但又主观性的给予其逻辑性，如第三度嫌疑人中的重盛一直在找凶手的杀人动机，一厢情愿地认为凶手是为救人而去杀人的，可是杀手也许不需要理由，所有的假设都只停留在假设，所有的真相都是片面主观的，杀手三隅只是一个容器，人们自私地往里面灌注自己的情感，自私地赋予他行凶的动机，但就如片中所说像盲人摸象一样，没有人能看到真理的模样。<br>我们或许比三隅情感丰富，比三隅善良，不会去杀人更不会去一遍遍地欺骗着想要帮助自己的人，但是我们每个人都戴着一顶面具，一顶名为理客的面具。我们自私地为我们的每个行为每个举动解释，带着理性的帽子，自圆其说般地活在这个以谎言为食的世界。人格是时间打磨而成的，当一个人不断在理性的环境下生活，接受理性的教育，他的人格也将建立在理性的框架之下，也会理性地为自己的种种行为理性地“开脱”。其中不乏真实地情感，但是人生就如同语文阅读题一样，其中也存在过度解读的成分，而人格不是非黑即白的，它经过时间的打磨，随着年龄的增长变得复杂而立体，人们总是试图去分析去比较它，可是这往往比人们想的要难一些。<br>我曾经也经常性的冒出一些很可怕不受控制的想法，最开始的时候我并没有想过要去约束它，但是后面它开始变得有些不受控制，思想是不受约束的，我开始害怕，它是无端由地出现，让我怀疑自己的人格是否堕落了。所幸人格实质上并没有好坏的分别，所谓高尚与否只是人们一厢情愿给它的意义，它只决定于你的三观，也就是说它是主观所决定的。<br>每个人都不过是「空的容器」，你是谁，你在想什么，都取决于别人想要看到的是什么。<br>我们都是容器。</p>]]></content>
+    <content type="html"><![CDATA[<p>看了福山雅治主演的第三度嫌疑人，许多困扰着我的问题我有了更深的理解。有理性的人类会将他们做出的行为赋予意义，将这些行为举动理性化，人们经常会做出一些难以理解的行为，但又主观性的给予其逻辑性，如第三度嫌疑人中的重盛一直在找凶手的杀人动机，一厢情愿地认为凶手是为救人而去杀人的，可是杀手也许不需要理由，所有的假设都只停留在假设，所有的真相都是片面主观的，杀手三隅只是一个容器，人们自私地往里面灌注自己的情感，自私地赋予他行凶的动机，但就如片中所说像盲人摸象一样，没有人能看到真理的模样。</p><p>我们或许比三隅情感丰富，比三隅善良，不会去杀人更不会去一遍遍地欺骗着想要帮助自己的人，但是我们每个人都戴着一顶面具，一顶名为理客的面具。我们自私地为我们的每个行为每个举动解释，带着理性的帽子，自圆其说般地活在这个以谎言为食的世界。人格是时间打磨而成的，当一个人不断在理性的环境下生活，接受理性的教育，他的人格也将建立在理性的框架之下，也会理性地为自己的种种行为理性地“开脱”。其中不乏真实地情感，但是人生就如同语文阅读题一样，其中也存在过度解读的成分，而人格不是非黑即白的，它经过时间的打磨，随着年龄的增长变得复杂而立体，人们总是试图去分析去比较它，可是这往往比人们想的要难一些。</p><p>我曾经也经常性的冒出一些很可怕不受控制的想法，最开始的时候我并没有想过要去约束它，但是后面它开始变得有些不受控制，思想是不受约束的，我开始害怕，它是无端由地出现，让我怀疑自己的人格是否堕落了。所幸人格实质上并没有好坏的分别，所谓高尚与否只是人们一厢情愿给它的意义，它只决定于你的三观，也就是说它是主观所决定的。</p><p>每个人都不过是「空的容器」，你是谁，你在想什么，都取决于别人想要看到的是什么。</p><p>我们都是容器。</p>]]></content>
     
     <summary type="html">
     
@@ -44,17 +65,15 @@
     <link href="http://Roooooooooy.github.io/2019/10/12/%E5%8F%AA%E6%9C%89%E7%A7%92%E8%A1%A8%E5%92%8C%E6%B8%B8%E6%A0%87%E5%8D%A1%E5%B0%BA%E4%B8%8D%E4%BC%B0%E8%AF%BB/"/>
     <id>http://Roooooooooy.github.io/2019/10/12/只有秒表和游标卡尺不估读/</id>
     <published>2019-10-11T16:03:52.000Z</published>
-    <updated>2019-10-13T12:01:28.834Z</updated>
+    <updated>2021-11-16T06:28:11.140Z</updated>
     
-    <content type="html"><![CDATA[<p>是炉中带火的余烬，雪中枯梅的寒芯<br>是濒死时闪耀的天体，热寂前躁动的微粒</p><p>是拖曳着寂寥于大气殆尽的流星<br>是裹挟着幽怨在彼岸游荡的幽灵</p><p>是六千五百万年前唯一幸存的蛇颈龙，<br>在浓雾中追寻着那伪装成同伴的灯塔号角<br>是辗转千里在大西洋郁郁而终的蓝鲸，<br>在大海深处轻吟着52赫兹镇魂曲化为孤岛<br>是受统一场理论束缚的爱因斯坦<br>是被平方根囚禁的根号三<br>是数着梅花的李寻欢<br>是背离光的暗<br>不愿变成旺火的柴薪<br>也不羡慕暖春的林荫<br>像中微子穿过实体，飞鸟划过天际<br>不着痕迹地活着</p>]]></content>
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><br>是炉中带火的余烬，雪中枯梅的寒芯<br>是濒死时闪耀的天体，热寂前躁动的微粒<br><br>是拖曳着寂寥于大气殆尽的流星<br>是裹挟着幽怨在彼岸游荡的幽灵<br><br>是六千五百万年前唯一幸存的蛇颈龙，<br>在浓雾中追寻着那伪装成同伴的灯塔号角<br>是辗转千里在大西洋郁郁而终的蓝鲸，<br>在大海深处轻吟着52赫兹镇魂曲化为孤岛<br>是受统一场理论束缚的爱因斯坦<br>是被平方根囚禁的根号三<br>是数着梅花的李寻欢<br>是背离光的暗<br>不愿变成旺火的柴薪<br>也不羡慕暖春的林荫<br>像中微子穿过实体，飞鸟划过天际<br>不着痕迹地活着<br></blockquote>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;是炉中带火的余烬，雪中枯梅的寒芯&lt;br&gt;是濒死时闪耀的天体，热寂前躁动的微粒&lt;/p&gt;
-&lt;p&gt;是拖曳着寂寥于大气殆尽的流星&lt;br&gt;是裹挟着幽怨在彼岸游荡的幽灵&lt;/p&gt;
-&lt;p&gt;是六千五百万年前唯一幸存的蛇颈龙，&lt;br&gt;在浓雾中追寻着那伪装成同伴的灯塔号角&lt;br&gt;是辗转千里在大西
+        &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;br&gt;是炉中带火的余烬，雪中枯梅的寒芯&lt;br&gt;是濒死时闪耀的天体，热寂前躁动的微粒&lt;br&gt;&lt;br&gt;是拖曳着寂寥于大气殆尽的流星&lt;br&gt;是裹挟着幽怨在彼岸游荡的幽灵&lt;br&gt;&lt;br&gt;是六千五百万年前唯一幸存
       
     
     </summary>
