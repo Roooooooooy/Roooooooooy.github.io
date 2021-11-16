@@ -1,6 +1,6 @@
 :root {
-  --body-bg-color: #fff;
-  --content-bg-color: #fff;
+  --body-bg-color: #eee;
+  --content-bg-color: #eee;
   --card-bg-color: #f5f5f5;
   --text-color: #555;
   --blockquote-color: #666;
@@ -1183,6 +1183,7 @@ pre .javascript .function {
   margin: 0 auto;
   max-width: 96px;
   padding: 2px;
+  border-radius: 50%;
 }
 .site-author-image {
   transition: transform 1s ease-out;
@@ -1216,7 +1217,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #a3ff4d;
+  background: #306a4f;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1542,10 +1543,7 @@ pre .javascript .function {
   position: fixed;
   transition-property: bottom;
   z-index: 1300;
-  width: 24px;
-}
-.back-to-top span {
-  display: none;
+  width: initial;
 }
 .back-to-top:hover {
   color: #87daff;
@@ -1558,6 +1556,16 @@ pre .javascript .function {
     left: 20px;
     opacity: 0.8;
   }
+}
+.reading-progress-bar {
+  background: #99FFFF;
+  display: block;
+  height: 3px;
+  left: 0;
+  position: fixed;
+  width: 0;
+  z-index: 1500;
+  top: 0;
 }
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -2230,7 +2238,7 @@ embed {
   border: 0;
 }
 .custom-logo-image {
-  background: black-deep;
+  background: $white;
   margin: 0 auto;
   max-width: 150px;
   padding: 5px;
@@ -2323,6 +2331,8 @@ embed {
   left: 30px;
 }
 .sidebar {
+  background: url("/images/jianbian.jfif");
+  background-size: cover;
   width: 320px;
   z-index: 1200;
   transition-delay: 0s;
