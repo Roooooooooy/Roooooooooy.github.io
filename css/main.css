@@ -1215,7 +1215,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #cf5dd7;
+  background: #980a2d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2421,7 +2421,7 @@ span#inline-purple {
   border-radius: 10px 10px 10px 10px;
 }
 body {
-  background-image: url("/images/jianbian2.jpg");
+  background-image: url("/images/24.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
