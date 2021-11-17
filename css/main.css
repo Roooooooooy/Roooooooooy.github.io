@@ -1215,7 +1215,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #980a2d;
+  background: #ac9eff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2314,7 +2314,7 @@ embed {
   left: 0;
 }
 .sidebar {
-  background: url("/images/jianbian.jfif");
+  background: url("/images/jianbian.png");
   background-size: cover;
   width: 300px;
   z-index: 1200;
