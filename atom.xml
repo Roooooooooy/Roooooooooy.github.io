@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Roooooooooy.github.io/"/>
-  <updated>2021-11-16T09:38:04.201Z</updated>
+  <updated>2021-11-18T03:39:50.935Z</updated>
   <id>http://Roooooooooy.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://Roooooooooy.github.io/2021/11/16/HighlightTest/"/>
     <id>http://Roooooooooy.github.io/2021/11/16/HighlightTest/</id>
     <published>2021-11-16T01:38:07.000Z</published>
-    <updated>2021-11-16T09:38:04.201Z</updated>
+    <updated>2021-11-18T03:39:50.935Z</updated>
     
     <content type="html"><![CDATA[<p><span id="inline-blue"> 蓝色背景高亮 </span><br><span id="inline-purple"> 紫色背景高亮 </span><br><span id="inline-yellow"> 黄色背景高亮 </span><br><span id="inline-green"> 绿色背景高亮 </span><br>普通代码块<pre><code>——–Normal-Code——–<br>Test1<br>    Test2<br>        Test3<br>——–CodeEnd——–<br></code></pre><br>c#代码块</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">IsRandomProbability</span>(<span class="params"><span class="built_in">int</span> numerator, <span class="built_in">int</span> denominator</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> random = UnityEngine.Random.Range(<span class="number">0</span>, denominator);</span><br><span class="line">    <span class="keyword">if</span> (random &lt; numerator)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Java代码块<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
     
@@ -34,6 +34,10 @@
     
     </summary>
     
+      <category term="Test" scheme="http://Roooooooooy.github.io/categories/Test/"/>
+    
+    
+      <category term="测试" scheme="http://Roooooooooy.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -206,7 +210,7 @@
     <link href="http://Roooooooooy.github.io/2019/03/21/0/"/>
     <id>http://Roooooooooy.github.io/2019/03/21/0/</id>
     <published>2019-03-20T16:14:20.000Z</published>
-    <updated>2019-03-21T05:19:11.297Z</updated>
+    <updated>2021-11-18T03:45:04.247Z</updated>
     
     <content type="html"><![CDATA[<p>TEST.0v0</p>]]></content>
     
@@ -220,6 +224,10 @@
     
     </summary>
     
+      <category term="Test" scheme="http://Roooooooooy.github.io/categories/Test/"/>
+    
+    
+      <category term="测试" scheme="http://Roooooooooy.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
