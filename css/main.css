@@ -926,8 +926,14 @@ pre .javascript .function {
   }
 }
 .comments {
+  background: rgba(225,255,255,0.45);
   margin-top: 60px;
   overflow: hidden;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 10px 10px 10px 10px;
 }
 .comment-button-group {
   display: flex;
@@ -945,6 +951,8 @@ pre .javascript .function {
 }
 .comment-position {
   display: none;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 .comment-position.active {
   display: block;
@@ -1215,7 +1223,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ac9eff;
+  background: #d177ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2241,7 +2249,12 @@ embed {
   padding: 5px;
 }
 .brand {
-  background: var(--btn-default-bg);
+  -webkit-box-shadow: 0 0 5px rgba(225,225,255,0.7);
+  -moz-box-shadow: 0 0 5px rgba(225,225,255,0.7);
+  box-shadow: 0 0 5px rgba(225,225,255,0.7);
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px 10px 10px 10px;
+  padding: 25px;
 }
 @media (max-width: 767px) {
   .site-nav {
@@ -2351,7 +2364,7 @@ embed {
   -webkit-box-shadow: 0 0 5px rgba(200,200,200,0.7);
   -moz-box-shadow: 0 0 5px rgba(200,200,200,0.7);
   box-shadow: 0 0 5px rgba(200,200,200,0.7);
-  background: rgba(225,255,255,0.15);
+  background: rgba(225,255,255,0.35);
   border-radius: 10px 10px 10px 10px;
 }
 span#inline-yellow {
