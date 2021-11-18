@@ -1223,7 +1223,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #346bc8;
+  background: #d708a4;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2249,9 +2249,9 @@ embed {
   padding: 5px;
 }
 .brand {
-  -webkit-box-shadow: 0 0 5px rgba(225,225,255,0.7);
-  -moz-box-shadow: 0 0 5px rgba(225,225,255,0.7);
-  box-shadow: 0 0 5px rgba(225,225,255,0.7);
+  -webkit-box-shadow: 0 7px 7px rgba(0,0,0,0.9);
+  -moz-box-shadow: 0 7px 7px rgba(0,0,0,0.9);
+  box-shadow: 0 7px 7px rgba(0,0,0,0.9);
   background: rgba(0,0,0,0.5);
   border-radius: 10px 10px 10px 10px;
   padding: 25px;
