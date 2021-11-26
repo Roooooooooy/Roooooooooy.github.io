@@ -177,7 +177,7 @@ body {
 body {
   background: var(--body-bg-color);
   color: var(--text-color);
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Mono', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 2;
 }
@@ -193,7 +193,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Mono', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -1038,7 +1038,7 @@ pre .javascript .function {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Mono', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   margin: 0;
@@ -1223,7 +1223,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff81;
+  background: #ff8aff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1573,7 +1573,7 @@ pre .javascript .function {
   top: 0;
 }
 .post-body {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Mono', "PingFang SC", "Microsoft YaHei", sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -1871,7 +1871,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   color: #999;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Mono', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 0.75em;
   margin: 3px 0 60px 0;
   text-align: center;
@@ -2466,6 +2466,42 @@ embed {
   box-shadow: 0 0 5px rgba(200,200,200,0.7);
   background: rgba(225,255,255,0.35);
   border-radius: 10px 10px 10px 10px;
+}
+code {
+  padding: 2px 4px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #ff7600;
+  background: #fbf7f8;
+  border-radius: 113px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+pre {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 12px;
+  margin: 0;
+  line-height: 20px; /* 行距 */
+  background: rgba(225,255,255,0.6); /*url(pre-bg.gif) repeat-y left top;*/
+  overflow: auto; /* 超出宽度出现滑动条 */
+  overflow-Y: hidden;
+/* 作用是隐藏IE的右侧滑动条 */
+  border-radius: 10px 10px 10px 10px;
+  padding: 8px;
+}
+::selection {
+  background-color: #5f9ea0;
+  color: #555;
+}
+.posts-expand .post-title-link {
+  color: #2f4f4f;
+  font-weight: bolder;
+}
+.posts-expand .post-title {
+  color: #d9534f;
 }
 span#inline-yellow {
   display: inline;

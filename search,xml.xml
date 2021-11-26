@@ -13,6 +13,61 @@
       </tags>
   </entry>
   <entry>
+    <title>19-08-20</title>
+    <url>/2019/08/20/19-08-20/</url>
+    <content><![CDATA[<p>深夜，雨停。<br>黑暗的房间中只有电脑屏幕的光。</p>
+<p>正在剪辑视频的我被屏幕前方飞来飞去的苍蝇蚊虫打乱了兴致，无论我如何驱逐它们，它们都像训练有素的哨兵巡逻一般在屏幕前来回踱步。我稍稍有些恼怒，抓起一张卫生纸动了杀心，但是飞虫们似乎早就看穿了我的行动，上一秒还在屏幕上搓手的苍蝇，在下一秒我手掌按下的风压还未接触到它们的躯壳之前便早早飞离我的攻击范围，并在安全地点稍做了停留后又飞回屏幕上，好像视危险于无物，不将我放在眼中一样。我接连出击但也只能落得下风，心情也越发急躁。<br>突然间，我看着屏幕上的虫子，不知怎得平静了下来。我慢慢起身，将房间的大灯打开，本没有多刺眼的光在上一瞬还是黑暗的卧室中显得是那么的明亮。虫子们如获至宝，离开了我的屏幕，朝着那救世般的光明飞去。我松了口气，坐回我的电脑前继续我的剪辑。</p>
+<p>这世间，谁又不是虫子呢？<br>                                      -19-08-20 1：05</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>C#单例模式的多种实现</title>
+    <url>/2021/11/26/Csharp%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%A4%9A%E7%A7%8D%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<font size=5 face="黑体">1.基本概念</font>
+
+
+
+]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>C#嵌套类</title>
+    <url>/2021/11/26/Csharp%E5%B5%8C%E5%A5%97%E7%B1%BB/</url>
+    <content><![CDATA[<font size=5 face="黑体">1.基本概念</font>
+
+<p> 【与Java中同名概念类似】<br>  <font size=3 face="黑体">嵌套类(Nested class)</font>：类中定义的类<br>   （1）静态嵌套类（使用较少，不概述）<br>   （2）非静态嵌套类（也称内部类）</p>
+  <font size=3 face="黑体">内部类(Inner class)</font>：<br>   （1）成员内部类(Member inner class)：类中直接定义的类<br>   （2）局部内部类(Local inner class)：类中方法里定义的类<br>   （3）匿名内部类(Anonymous inner class)<br><br><font size=5 face="黑体">2.访问权限</font>
+
+<p> （1）外部类只能够访问嵌套类中修饰符为public、internal的成员<br><figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Set_Pet</span>(<span class="params"></span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//编译正确</span></span><br><span class="line">        Cat._high = <span class="number">123</span>;</span><br><span class="line">        Cat._age = <span class="number">4</span>;</span><br><span class="line">        <span class="comment">//编译失败</span></span><br><span class="line">        <span class="comment">//Cat._name = &quot;Tom&quot;;</span></span><br><span class="line">        <span class="comment">//Cat._sex = &quot;male&quot;;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="built_in">string</span> _name;</span><br><span class="line">        <span class="keyword">protected</span> <span class="built_in">string</span> _sex;</span><br><span class="line">        <span class="keyword">internal</span> <span class="keyword">static</span> <span class="built_in">int</span> _age;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">int</span> _high;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br> （2）嵌套类访问外部类成员不受访问修饰符限制</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="built_in">int</span> _age;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">string</span> _name;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Set_Pet</span>(<span class="params"></span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Cat.Set_Cat(<span class="keyword">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Set_Cat</span>(<span class="params">Pet a</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            _age = <span class="number">3</span>;        <span class="comment">//静态成员</span></span><br><span class="line">            a._name = <span class="string">&quot;Tom&quot;</span>; <span class="comment">//实例成员</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<font size=5 face="黑体">3.嵌套类的作用</font><br><font size=3 face="黑体">Java嵌套类百科：</font><br><pre><code>使用嵌套类的主要理由是：<br><br>1.它是一种只对一个地方使用的类进行逻辑分组的方法：<br>    如果一个类只对另一个类有用，那么将其嵌入到该类中并使这两个类保持在一起是合乎逻辑的。嵌套这样的“助手类（Helper Class）”使它们所在的包更为精简。<br><br>2.它增强了封装性：<br>    考虑两个顶层类（Top-Level Class），A 和 B，当 B 需要访问 A 中被声明为 private 的成员时，可将 B 嵌入 A 中，这样 B 就可以访问 A 中的私有成员了。此外，B 本身也可以对外界隐藏起来。<br><br>3.它使代码更具可读性和可维护性：<br>    在顶层类中嵌套小类，会使代码更接近其使用的位置。</code></pre><br> 在C#中除Java中嵌套类的几个用途外，由于C#语言特性，<span id="inline-blue">嵌套类在外部类被调用时才会被实例化</span>，所以也可用于特定功能实现，如后文中提到的延迟加载线程安全的无锁单例类。<br><br><br><font size=5 face="黑体">4.嵌套类的使用</font>
+
+<p>（1）嵌套类访问外部类实例的方法、字段、属性时候。一般在采取构造函数输入外部类</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">string</span> _name;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Cat</span>(<span class="params">Pet a</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            a._name = <span class="string">&quot;test&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> （2）继承类的嵌套类可以继承父类中的嵌套类</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">SayMyName</span>(<span class="params"></span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Console.WriteLine(<span class="string">&quot;猫&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">CommonPet</span> : <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">RagdollCat</span> : <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">SayMyName</span>(<span class="params"></span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Console.WriteLine(<span class="string">&quot;布偶猫&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>p.s.：因为CommonPet继承于Pet ，因此RagdollCat可以继承Cat类，从而获取继承父嵌套类的机会。<br>但是Cat必须是可继承类且可访问的（非private 、sealed 、static）。嵌套类可随意访问外部类的成员，而外部类访问嵌套类需要遵守访问修饰符。<br>所以这样来看嵌套类是对外部类的补充，从程序结构看，嵌套类在逻辑上更接近使用类。可以更有效地表示类与类间的紧密程度，为类的管理提供除命名空间外的另一种方法。所以通过嵌套类可以获取更好的封装性，增加外部类的可维护性和可读性。（嵌套类百科中嵌套类作用第2、3点）</p>
+<p>（3）延迟加载单例模式（Fully lazy singleton）<br><figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Pet Intance &#123; <span class="keyword">get</span> =&gt; Cat._intance; &#125;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">readonly</span> <span class="keyword">static</span> Pet _intance = <span class="keyword">new</span> Pet();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>p.s.：嵌套类的静态构造函数不随外部类的实例化而调用。因此可以有效地避免实例化外部类时嵌套类的初始化时间，当需要使用嵌套类时，嵌套类才开始实例化，也叫懒加载。详见<a href="/2021/11/26/Csharp单例模式的多种实现">C#单例模式的多种实现</a></p>
+<p>（4）反射内嵌类需要使用”+”而不是常用的”.” </p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">namespace</span> <span class="title">PetClass</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">        &#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>  <font face="黑体">主函数中执行下列语句：</font></p>
+<pre><code>object o1 = Type.GetType("PetClass.Pet+Cat", true);
+//成功</code></pre>
+<pre><code>object o2 = Type.GetType("PetClass.Pet.Cat", true);
+//失败 抛出System.TypeLoadException异常
+</code></pre>
+
+]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+  </entry>
+  <entry>
     <title>HighlightTest</title>
     <url>/2021/11/16/HighlightTest/</url>
     <content><![CDATA[<p><span id="inline-blue"> 蓝色背景高亮 </span><br><span id="inline-purple"> 紫色背景高亮 </span><br><span id="inline-yellow"> 黄色背景高亮 </span><br><span id="inline-green"> 绿色背景高亮 </span><br>普通代码块<pre><code>——–Normal-Code——–<br>Test1<br>    Test2<br>        Test3<br>——–CodeEnd——–<br></code></pre><br>c#代码块</p>
@@ -39,17 +94,6 @@
     <title>交流</title>
     <url>/2019/05/10/%E4%BA%A4%E6%B5%81/</url>
     <content><![CDATA[<p>我是什么时候这么畏惧交流的，愈发的自闭，封闭体系中的熵增不可逆，这么简单的道理我是早就明白的呀。交流，多交流，目前为止失去的都是交流上出了问题。交流。</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>19-08-20</title>
-    <url>/2019/08/20/19-08-20/</url>
-    <content><![CDATA[<p>深夜，雨停。<br>黑暗的房间中只有电脑屏幕的光。</p>
-<p>正在剪辑视频的我被屏幕前方飞来飞去的苍蝇蚊虫打乱了兴致，无论我如何驱逐它们，它们都像训练有素的哨兵巡逻一般在屏幕前来回踱步。我稍稍有些恼怒，抓起一张卫生纸动了杀心，但是飞虫们似乎早就看穿了我的行动，上一秒还在屏幕上搓手的苍蝇，在下一秒我手掌按下的风压还未接触到它们的躯壳之前便早早飞离我的攻击范围，并在安全地点稍做了停留后又飞回屏幕上，好像视危险于无物，不将我放在眼中一样。我接连出击但也只能落得下风，心情也越发急躁。<br>突然间，我看着屏幕上的虫子，不知怎得平静了下来。我慢慢起身，将房间的大灯打开，本没有多刺眼的光在上一瞬还是黑暗的卧室中显得是那么的明亮。虫子们如获至宝，离开了我的屏幕，朝着那救世般的光明飞去。我松了口气，坐回我的电脑前继续我的剪辑。</p>
-<p>这世间，谁又不是虫子呢？<br>                                      -19-08-20 1：05</p>
 ]]></content>
       <categories>
         <category>随笔</category>
