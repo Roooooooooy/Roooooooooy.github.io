@@ -9,7 +9,7 @@
         <category>Test</category>
       </categories>
       <tags>
-        <tag>测试</tag>
+        <tag>Test</tag>
       </tags>
   </entry>
   <entry>
@@ -34,6 +34,9 @@
       <categories>
         <category>C#</category>
       </categories>
+      <tags>
+        <tag>设计模式</tag>
+      </tags>
   </entry>
   <entry>
     <title>C#嵌套类</title>
@@ -66,6 +69,9 @@
       <categories>
         <category>C#</category>
       </categories>
+      <tags>
+        <tag>C#语法</tag>
+      </tags>
   </entry>
   <entry>
     <title>HighlightTest</title>
@@ -78,7 +84,41 @@
         <category>Test</category>
       </categories>
       <tags>
-        <tag>测试</tag>
+        <tag>Test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Job System简介</title>
+    <url>/2021/12/02/Job%20System%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<p><a href="https://docs.unity3d.com/Manual/JobSystem.html">Job System官方手册</a>上对于Job System的描述是:</p>
+<p><pre>The Unity C# Job System lets you write simple and safe multithreaded code that interacts with the Unity Engine for enhanced game performance.</p>
+<p>You can use the C# Job System with the Unity Entity Component System (ECS), which is an architecture that makes it simple to create efficient machine code for all platforms.</pre><br>简单来说就是Unity自己封好的一个更为安全的多线程解决方案，建议和ECS搭配使用。</p>
+]]></content>
+      <categories>
+        <category>Unity</category>
+      </categories>
+      <tags>
+        <tag>DOTS</tag>
+        <tag>Job System</tag>
+        <tag>Unity</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Unity DOTS</title>
+    <url>/2021/12/02/Unity%20DOTS/</url>
+    <content><![CDATA[<p>DOTS 全称 Data-Oriented-Tech-Stack：直译为“面向数据技术栈”，官方翻译是“多线程式数据导向型技术堆栈”<br>它是一个Unity推出的项目开发的完整解决方案，由三部分组成：</p>
+<p><pre><code>Job System（任务系统）：编写多线程代码<br>ECS（Entity Component System 实体组件系统）：编写高性能代码<br>Burst Compliler（Burst编译器）：编译生成高性能代码<br></code></pre><br>Job System和Burst使得在某些特定场景里运行性能能够提升几千倍，但DOTS并不是一个单纯的解决性能问题的解决方案，其中的ECS解决了Unity一些长期的架构问题，相较于传统的GameObject来说ECS具有得天独厚的优势，当然也有缺憾，这些在相对应的文章里再进行详述。</p>
+<p>DOTS现在在实际应用和推广上比较困难，主要因为本身还不是特别成熟，更新迭代速度非常快。并且本身的面向数据的特性也使得开发阶段的工作更为细碎漫长，所以一般是将其三个部分分开并与传统Unity框架开发混合起来使用。</p>
+<p>如何使用DOTS？</p>
+<p>首先检查Unity版本，一般建议2019以上；确保工程里的Packages中有<pre>Burst<br>Entities<br>Jobs<br>Hybrid Renderer（DOTS的渲染相关）<br>Unity Physics(DOTS的高性能物理组件)<br>Collections（提供一些原生集合）<br>Mathematics（可用于Burst编译的数学库）</pre><br>若没有则<code>打开菜单栏-window-&gt;package manager，右侧的Advanced下拉切换为show preview package，找到上述包并安装。</code>如果是2020或更高版本可能不能在package manager里查看预览包，那么可以选择<code>在项目根目录下找到Packages下的manifest.json文件，打开并在dependencies依赖包目录中添加上述对应版本的upm包</code>，或者<code>打开package manager，在左上角＋号图标选择Add package from git URL，输入包名手动添加。</code></p>
+<p>接着介绍ECS和Job System：<br><a href="/tags/">ECS</a><br><a href="/tags/Job-System/">Job System</a></p>
+]]></content>
+      <categories>
+        <category>Unity</category>
+      </categories>
+      <tags>
+        <tag>DOTS</tag>
+        <tag>Unity</tag>
       </tags>
   </entry>
   <entry>

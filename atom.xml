@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Roooooooooy.github.io/"/>
-  <updated>2021-11-26T10:11:39.273Z</updated>
+  <updated>2021-12-02T09:30:56.256Z</updated>
   <id>http://Roooooooooy.github.io/</id>
   
   <author>
@@ -17,11 +17,69 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Job System简介</title>
+    <link href="http://Roooooooooy.github.io/2021/12/02/Job%20System%E7%AE%80%E4%BB%8B/"/>
+    <id>http://Roooooooooy.github.io/2021/12/02/Job System简介/</id>
+    <published>2021-12-02T08:27:22.000Z</published>
+    <updated>2021-12-02T09:30:56.256Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://docs.unity3d.com/Manual/JobSystem.html">Job System官方手册</a>上对于Job System的描述是:</p><p><pre>The Unity C# Job System lets you write simple and safe multithreaded code that interacts with the Unity Engine for enhanced game performance.</p><p>You can use the C# Job System with the Unity Entity Component System (ECS), which is an architecture that makes it simple to create efficient machine code for all platforms.</pre><br>简单来说就是Unity自己封好的一个更为安全的多线程解决方案，建议和ECS搭配使用。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://docs.unity3d.com/Manual/JobSystem.html&quot;&gt;Job System官方手册&lt;/a&gt;上对于Job System的描述是:&lt;/p&gt;
+&lt;p&gt;&lt;pre&gt;The Unity C# Job System lets yo
+      
+    
+    </summary>
+    
+      <category term="Unity" scheme="http://Roooooooooy.github.io/categories/Unity/"/>
+    
+    
+      <category term="DOTS" scheme="http://Roooooooooy.github.io/tags/DOTS/"/>
+    
+      <category term="Job System" scheme="http://Roooooooooy.github.io/tags/Job-System/"/>
+    
+      <category term="Unity" scheme="http://Roooooooooy.github.io/tags/Unity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity DOTS</title>
+    <link href="http://Roooooooooy.github.io/2021/12/02/Unity%20DOTS/"/>
+    <id>http://Roooooooooy.github.io/2021/12/02/Unity DOTS/</id>
+    <published>2021-12-02T03:53:13.000Z</published>
+    <updated>2021-12-02T09:31:27.944Z</updated>
+    
+    <content type="html"><![CDATA[<p>DOTS 全称 Data-Oriented-Tech-Stack：直译为“面向数据技术栈”，官方翻译是“多线程式数据导向型技术堆栈”<br>它是一个Unity推出的项目开发的完整解决方案，由三部分组成：</p><p><pre><code>Job System（任务系统）：编写多线程代码<br>ECS（Entity Component System 实体组件系统）：编写高性能代码<br>Burst Compliler（Burst编译器）：编译生成高性能代码<br></code></pre><br>Job System和Burst使得在某些特定场景里运行性能能够提升几千倍，但DOTS并不是一个单纯的解决性能问题的解决方案，其中的ECS解决了Unity一些长期的架构问题，相较于传统的GameObject来说ECS具有得天独厚的优势，当然也有缺憾，这些在相对应的文章里再进行详述。</p><p>DOTS现在在实际应用和推广上比较困难，主要因为本身还不是特别成熟，更新迭代速度非常快。并且本身的面向数据的特性也使得开发阶段的工作更为细碎漫长，所以一般是将其三个部分分开并与传统Unity框架开发混合起来使用。</p><p>如何使用DOTS？</p><p>首先检查Unity版本，一般建议2019以上；确保工程里的Packages中有<pre>Burst<br>Entities<br>Jobs<br>Hybrid Renderer（DOTS的渲染相关）<br>Unity Physics(DOTS的高性能物理组件)<br>Collections（提供一些原生集合）<br>Mathematics（可用于Burst编译的数学库）</pre><br>若没有则<code>打开菜单栏-window-&gt;package manager，右侧的Advanced下拉切换为show preview package，找到上述包并安装。</code>如果是2020或更高版本可能不能在package manager里查看预览包，那么可以选择<code>在项目根目录下找到Packages下的manifest.json文件，打开并在dependencies依赖包目录中添加上述对应版本的upm包</code>，或者<code>打开package manager，在左上角＋号图标选择Add package from git URL，输入包名手动添加。</code></p><p>接着介绍ECS和Job System：<br><a href="/tags/">ECS</a><br><a href="/tags/Job-System/">Job System</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;DOTS 全称 Data-Oriented-Tech-Stack：直译为“面向数据技术栈”，官方翻译是“多线程式数据导向型技术堆栈”&lt;br&gt;它是一个Unity推出的项目开发的完整解决方案，由三部分组成：&lt;/p&gt;
+&lt;p&gt;&lt;pre&gt;&lt;code&gt;Job System（任务系统）：
+      
+    
+    </summary>
+    
+      <category term="Unity" scheme="http://Roooooooooy.github.io/categories/Unity/"/>
+    
+    
+      <category term="DOTS" scheme="http://Roooooooooy.github.io/tags/DOTS/"/>
+    
+      <category term="Unity" scheme="http://Roooooooooy.github.io/tags/Unity/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C#嵌套类</title>
     <link href="http://Roooooooooy.github.io/2021/11/26/Csharp%E5%B5%8C%E5%A5%97%E7%B1%BB/"/>
     <id>http://Roooooooooy.github.io/2021/11/26/Csharp嵌套类/</id>
     <published>2021-11-26T09:56:13.000Z</published>
-    <updated>2021-11-26T10:11:39.273Z</updated>
+    <updated>2021-12-02T03:54:56.835Z</updated>
     
     <content type="html"><![CDATA[<font size=5 face="黑体">1.基本概念</font><p> 【与Java中同名概念类似】<br>  <font size=3 face="黑体">嵌套类(Nested class)</font>：类中定义的类<br>   （1）静态嵌套类（使用较少，不概述）<br>   （2）非静态嵌套类（也称内部类）</p>  <font size=3 face="黑体">内部类(Inner class)</font>：<br>   （1）成员内部类(Member inner class)：类中直接定义的类<br>   （2）局部内部类(Local inner class)：类中方法里定义的类<br>   （3）匿名内部类(Anonymous inner class)<br><br><font size=5 face="黑体">2.访问权限</font><p> （1）外部类只能够访问嵌套类中修饰符为public、internal的成员<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Set_Pet</span>(<span class="params"></span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//编译正确</span></span><br><span class="line">        Cat._high = <span class="number">123</span>;</span><br><span class="line">        Cat._age = <span class="number">4</span>;</span><br><span class="line">        <span class="comment">//编译失败</span></span><br><span class="line">        <span class="comment">//Cat._name = &quot;Tom&quot;;</span></span><br><span class="line">        <span class="comment">//Cat._sex = &quot;male&quot;;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="built_in">string</span> _name;</span><br><span class="line">        <span class="keyword">protected</span> <span class="built_in">string</span> _sex;</span><br><span class="line">        <span class="keyword">internal</span> <span class="keyword">static</span> <span class="built_in">int</span> _age;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">int</span> _high;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br> （2）嵌套类访问外部类成员不受访问修饰符限制</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="built_in">int</span> _age;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">string</span> _name;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Set_Pet</span>(<span class="params"></span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Cat.Set_Cat(<span class="keyword">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Set_Cat</span>(<span class="params">Pet a</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            _age = <span class="number">3</span>;        <span class="comment">//静态成员</span></span><br><span class="line">            a._name = <span class="string">&quot;Tom&quot;</span>; <span class="comment">//实例成员</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><font size=5 face="黑体">3.嵌套类的作用</font><br><font size=3 face="黑体">Java嵌套类百科：</font><br><pre><code>使用嵌套类的主要理由是：<br><br>1.它是一种只对一个地方使用的类进行逻辑分组的方法：<br>    如果一个类只对另一个类有用，那么将其嵌入到该类中并使这两个类保持在一起是合乎逻辑的。嵌套这样的“助手类（Helper Class）”使它们所在的包更为精简。<br><br>2.它增强了封装性：<br>    考虑两个顶层类（Top-Level Class），A 和 B，当 B 需要访问 A 中被声明为 private 的成员时，可将 B 嵌入 A 中，这样 B 就可以访问 A 中的私有成员了。此外，B 本身也可以对外界隐藏起来。<br><br>3.它使代码更具可读性和可维护性：<br>    在顶层类中嵌套小类，会使代码更接近其使用的位置。</code></pre><br> 在C#中除Java中嵌套类的几个用途外，由于C#语言特性，<span id="inline-blue">嵌套类在外部类被调用时才会被实例化</span>，所以也可用于特定功能实现，如后文中提到的延迟加载线程安全的无锁单例类。<br><br><br><font size=5 face="黑体">4.嵌套类的使用</font><p>（1）嵌套类访问外部类实例的方法、字段、属性时候。一般在采取构造函数输入外部类</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">string</span> _name;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Cat</span>(<span class="params">Pet a</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            a._name = <span class="string">&quot;test&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p> （2）继承类的嵌套类可以继承父类中的嵌套类</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">SayMyName</span>(<span class="params"></span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Console.WriteLine(<span class="string">&quot;猫&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">CommonPet</span> : <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">RagdollCat</span> : <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">SayMyName</span>(<span class="params"></span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            Console.WriteLine(<span class="string">&quot;布偶猫&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>p.s.：因为CommonPet继承于Pet ，因此RagdollCat可以继承Cat类，从而获取继承父嵌套类的机会。<br>但是Cat必须是可继承类且可访问的（非private 、sealed 、static）。嵌套类可随意访问外部类的成员，而外部类访问嵌套类需要遵守访问修饰符。<br>所以这样来看嵌套类是对外部类的补充，从程序结构看，嵌套类在逻辑上更接近使用类。可以更有效地表示类与类间的紧密程度，为类的管理提供除命名空间外的另一种方法。所以通过嵌套类可以获取更好的封装性，增加外部类的可维护性和可读性。（嵌套类百科中嵌套类作用第2、3点）</p><p>（3）延迟加载单例模式（Fully lazy singleton）<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Pet Intance &#123; <span class="keyword">get</span> =&gt; Cat._intance; &#125;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">readonly</span> <span class="keyword">static</span> Pet _intance = <span class="keyword">new</span> Pet();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>p.s.：嵌套类的静态构造函数不随外部类的实例化而调用。因此可以有效地避免实例化外部类时嵌套类的初始化时间，当需要使用嵌套类时，嵌套类才开始实例化，也叫懒加载。详见<a href="/2021/11/26/Csharp单例模式的多种实现">C#单例模式的多种实现</a></p><p>（4）反射内嵌类需要使用”+”而不是常用的”.” </p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> <span class="title">PetClass</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Pet</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Cat</span></span><br><span class="line">        &#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>  <font face="黑体">主函数中执行下列语句：</font></p><pre><code>object o1 = Type.GetType("PetClass.Pet+Cat", true);//成功</code></pre><pre><code>object o2 = Type.GetType("PetClass.Pet.Cat", true);//失败 抛出System.TypeLoadException异常</code></pre>]]></content>
     
@@ -39,6 +97,8 @@
       <category term="C#" scheme="http://Roooooooooy.github.io/categories/C/"/>
     
     
+      <category term="C#语法" scheme="http://Roooooooooy.github.io/tags/C-%E8%AF%AD%E6%B3%95/"/>
+    
   </entry>
   
   <entry>
@@ -46,7 +106,7 @@
     <link href="http://Roooooooooy.github.io/2021/11/26/Csharp%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%A4%9A%E7%A7%8D%E5%AE%9E%E7%8E%B0/"/>
     <id>http://Roooooooooy.github.io/2021/11/26/Csharp单例模式的多种实现/</id>
     <published>2021-11-26T06:24:22.000Z</published>
-    <updated>2021-11-26T09:56:16.715Z</updated>
+    <updated>2021-12-02T03:56:07.834Z</updated>
     
     <content type="html"><![CDATA[<font size=5 face="黑体">1.基本概念</font>]]></content>
     
@@ -66,6 +126,8 @@
       <category term="C#" scheme="http://Roooooooooy.github.io/categories/C/"/>
     
     
+      <category term="设计模式" scheme="http://Roooooooooy.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
   </entry>
   
   <entry>
@@ -73,7 +135,7 @@
     <link href="http://Roooooooooy.github.io/2021/11/16/HighlightTest/"/>
     <id>http://Roooooooooy.github.io/2021/11/16/HighlightTest/</id>
     <published>2021-11-16T01:38:07.000Z</published>
-    <updated>2021-11-18T03:39:50.935Z</updated>
+    <updated>2021-12-02T08:05:36.320Z</updated>
     
     <content type="html"><![CDATA[<p><span id="inline-blue"> 蓝色背景高亮 </span><br><span id="inline-purple"> 紫色背景高亮 </span><br><span id="inline-yellow"> 黄色背景高亮 </span><br><span id="inline-green"> 绿色背景高亮 </span><br>普通代码块<pre><code>——–Normal-Code——–<br>Test1<br>    Test2<br>        Test3<br>——–CodeEnd——–<br></code></pre><br>c#代码块</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">IsRandomProbability</span>(<span class="params"><span class="built_in">int</span> numerator, <span class="built_in">int</span> denominator</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> random = UnityEngine.Random.Range(<span class="number">0</span>, denominator);</span><br><span class="line">    <span class="keyword">if</span> (random &lt; numerator)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Java代码块<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
     
@@ -89,7 +151,7 @@
       <category term="Test" scheme="http://Roooooooooy.github.io/categories/Test/"/>
     
     
-      <category term="测试" scheme="http://Roooooooooy.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="Test" scheme="http://Roooooooooy.github.io/tags/Test/"/>
     
   </entry>
   
@@ -262,7 +324,7 @@
     <link href="http://Roooooooooy.github.io/2019/03/21/0/"/>
     <id>http://Roooooooooy.github.io/2019/03/21/0/</id>
     <published>2019-03-20T16:14:20.000Z</published>
-    <updated>2021-11-18T03:45:04.247Z</updated>
+    <updated>2021-12-02T08:07:08.753Z</updated>
     
     <content type="html"><![CDATA[<p>TEST.0v0</p>]]></content>
     
@@ -279,7 +341,7 @@
       <category term="Test" scheme="http://Roooooooooy.github.io/categories/Test/"/>
     
     
-      <category term="测试" scheme="http://Roooooooooy.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="Test" scheme="http://Roooooooooy.github.io/tags/Test/"/>
     
   </entry>
   
