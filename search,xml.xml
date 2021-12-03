@@ -24,21 +24,6 @@
       </categories>
   </entry>
   <entry>
-    <title>C#单例模式的多种实现</title>
-    <url>/2021/11/26/Csharp%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%A4%9A%E7%A7%8D%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[<font size=5 face="黑体">1.基本概念</font>
-
-
-
-]]></content>
-      <categories>
-        <category>C#</category>
-      </categories>
-      <tags>
-        <tag>设计模式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>C#嵌套类</title>
     <url>/2021/11/26/Csharp%E5%B5%8C%E5%A5%97%E7%B1%BB/</url>
     <content><![CDATA[<font size=5 face="黑体">1.基本概念</font>
@@ -74,17 +59,18 @@
       </tags>
   </entry>
   <entry>
-    <title>HighlightTest</title>
-    <url>/2021/11/16/HighlightTest/</url>
-    <content><![CDATA[<p><span id="inline-blue"> 蓝色背景高亮 </span><br><span id="inline-purple"> 紫色背景高亮 </span><br><span id="inline-yellow"> 黄色背景高亮 </span><br><span id="inline-green"> 绿色背景高亮 </span><br>普通代码块<pre><code>——–Normal-Code——–<br>Test1<br>    Test2<br>        Test3<br>——–CodeEnd——–<br></code></pre><br>c#代码块</p>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">IsRandomProbability</span>(<span class="params"><span class="built_in">int</span> numerator, <span class="built_in">int</span> denominator</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> random = UnityEngine.Random.Range(<span class="number">0</span>, denominator);</span><br><span class="line">    <span class="keyword">if</span> (random &lt; numerator)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Java代码块<br><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+    <title>C#单例模式的多种实现</title>
+    <url>/2021/11/26/Csharp%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%A4%9A%E7%A7%8D%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<font size=5 face="黑体">1.基本概念</font>
+
+
+
 ]]></content>
       <categories>
-        <category>Test</category>
+        <category>C#</category>
       </categories>
       <tags>
-        <tag>Test</tag>
+        <tag>设计模式</tag>
       </tags>
   </entry>
   <entry>
@@ -101,6 +87,20 @@
         <tag>DOTS</tag>
         <tag>Job System</tag>
         <tag>Unity</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HighlightTest</title>
+    <url>/2021/11/16/HighlightTest/</url>
+    <content><![CDATA[<p><span id="inline-blue"> 蓝色背景高亮 </span><br><span id="inline-purple"> 紫色背景高亮 </span><br><span id="inline-yellow"> 黄色背景高亮 </span><br><span id="inline-green"> 绿色背景高亮 </span><br>普通代码块<pre><code>——–Normal-Code——–<br>Test1<br>    Test2<br>        Test3<br>——–CodeEnd——–<br></code></pre><br>c#代码块</p>
+<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">IsRandomProbability</span>(<span class="params"><span class="built_in">int</span> numerator, <span class="built_in">int</span> denominator</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">var</span> random = UnityEngine.Random.Range(<span class="number">0</span>, denominator);</span><br><span class="line">    <span class="keyword">if</span> (random &lt; numerator)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Java代码块<br><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>Test</category>
+      </categories>
+      <tags>
+        <tag>Test</tag>
       </tags>
   </entry>
   <entry>
@@ -131,15 +131,6 @@
       </categories>
   </entry>
   <entry>
-    <title>交流</title>
-    <url>/2019/05/10/%E4%BA%A4%E6%B5%81/</url>
-    <content><![CDATA[<p>我是什么时候这么畏惧交流的，愈发的自闭，封闭体系中的熵增不可逆，这么简单的道理我是早就明白的呀。交流，多交流，目前为止失去的都是交流上出了问题。交流。</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-  </entry>
-  <entry>
     <title>只有秒表和游标卡尺不估读</title>
     <url>/2019/10/12/%E5%8F%AA%E6%9C%89%E7%A7%92%E8%A1%A8%E5%92%8C%E6%B8%B8%E6%A0%87%E5%8D%A1%E5%B0%BA%E4%B8%8D%E4%BC%B0%E8%AF%BB/</url>
     <content><![CDATA[<blockquote class="blockquote-center"><br>是炉中带火的余烬，雪中枯梅的寒芯<br>是濒死时闪耀的天体，热寂前躁动的微粒<br><br>是拖曳着寂寥于大气殆尽的流星<br>是裹挟着幽怨在彼岸游荡的幽灵<br><br>是六千五百万年前唯一幸存的蛇颈龙，<br>在浓雾中追寻着那伪装成同伴的灯塔号角<br>是辗转千里在大西洋郁郁而终的蓝鲸，<br>在大海深处轻吟着52赫兹镇魂曲化为孤岛<br>是受统一场理论束缚的爱因斯坦<br>是被平方根囚禁的根号三<br>是数着梅花的李寻欢<br>是背离光的暗<br>不愿变成旺火的柴薪<br>也不羡慕暖春的林荫<br>像中微子穿过实体，飞鸟划过天际<br>不着痕迹地活着<br></blockquote>
@@ -147,6 +138,15 @@
 ]]></content>
       <categories>
         <category>短诗</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>交流</title>
+    <url>/2019/05/10/%E4%BA%A4%E6%B5%81/</url>
+    <content><![CDATA[<p>我是什么时候这么畏惧交流的，愈发的自闭，封闭体系中的熵增不可逆，这么简单的道理我是早就明白的呀。交流，多交流，目前为止失去的都是交流上出了问题。交流。</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
       </categories>
   </entry>
   <entry>
